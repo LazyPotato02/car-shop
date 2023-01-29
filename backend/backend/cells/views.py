@@ -13,6 +13,11 @@ class CreateCell(LoginRequiredMixin,views.CreateView):
     model = Cells
     form_class = CellForm
     login_url = reverse_lazy('login')
-    # redirect_field_name = reverse_lazy('cell list')
+    redirect_field_name = reverse_lazy('cell listing')
     template_name = 'cells/cell-create.html'
-    success_url = reverse_lazy('home page') # TODO: Set proper route
+    success_url = reverse_lazy('cell listing')
+
+class ListCell(LoginRequiredMixin, views.ListView):
+    model = Cells
+    login_url = reverse_lazy('login')
+    template_name = 'cells/cell-list.html'

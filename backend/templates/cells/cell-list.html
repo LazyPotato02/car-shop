@@ -1,0 +1,7 @@
+{% extends 'base/base.html' %}
+{% block title %}Cell List{% endblock %}
+{% block content %}
+    {% for cell in cells_list %}
+        {{ cell }}
+    {% endfor %}
+{% endblock %}

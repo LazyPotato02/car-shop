@@ -15,7 +15,9 @@
   text-decoration: none;
   font-size: 17px;
 }
-
+.user__name a{
+  color: white;
+}
 .active {
   background-color: #0030ee;
   color: white;
