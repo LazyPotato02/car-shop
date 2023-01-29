@@ -1,11 +1,18 @@
-from django.shortcuts import render
-from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 from django.urls import reverse_lazy
 from django.views import generic as views
 
+from backend.cells.forms import CellForm
+from backend.cells.models import Cells
+
 # Create your views here.
-UserModel = get_user_model()
 
 
+class CreateCell(LoginRequiredMixin,views.CreateView):
+    model = Cells
+    form_class = CellForm
+    login_url = reverse_lazy('login')
+    # redirect_field_name = reverse_lazy('cell list')
+    template_name = 'cells/cell-create.html'
+    success_url = reverse_lazy('home page') # TODO: Set proper route
