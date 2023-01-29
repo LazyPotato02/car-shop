@@ -1,5 +1,10 @@
 {% extends 'base/base.html' %}
+{% load static %}
+
 {% block title %} Home Page{% endblock %}
 {% block content %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
+    <h1 class="wellcome__text">Welcome to Employee Management System </h1>
+    
 {% endblock %}

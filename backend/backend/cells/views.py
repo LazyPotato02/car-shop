@@ -9,5 +9,3 @@ from django.views import generic as views
 UserModel = get_user_model()
 
 
-class Index(views.TemplateView):
-    template_name = 'base/index.html'
