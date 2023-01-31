@@ -6,16 +6,18 @@ from django.views import generic as views
 from backend.cells.forms import CellForm
 from backend.cells.models import Cells
 
+
 # Create your views here.
 
 
-class CreateCell(LoginRequiredMixin,views.CreateView):
+class CreateCell(LoginRequiredMixin, views.CreateView):
     model = Cells
     form_class = CellForm
     login_url = reverse_lazy('login')
     redirect_field_name = reverse_lazy('cell listing')
     template_name = 'cells/cell-create.html'
     success_url = reverse_lazy('cell listing')
+
 
 class ListCell(LoginRequiredMixin, views.ListView):
     model = Cells

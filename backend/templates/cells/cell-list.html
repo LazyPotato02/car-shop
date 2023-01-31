@@ -1,7 +1,15 @@
 {% extends 'base/base.html' %}
+{% load static %}
 {% block title %}Cell List{% endblock %}
 {% block content %}
+    <link rel="stylesheet" href="{% static 'css/cells/cell-list.css' %}">
+    <h2 class="cell__title">Cell Listing</h2>
     {% for cell in cells_list %}
-        {{ cell }}
+        <div class="cell__container">
+            {{ cell }}
+            <a href="{% url 'home page' %}">  {# TODO: change to proper value #}
+                <button class="cells__button_edit">Edit</button>
+            </a>
+        </div>
     {% endfor %}
 {% endblock %}
