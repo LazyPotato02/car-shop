@@ -7,7 +7,7 @@
     {% for cell in cells_list %}
         <div class="cell__container">
             {{ cell }}
-            <a href="{% url 'home page' %}">  {# TODO: change to proper value #}
+            <a href="{% url 'cell edit' pk=cell.pk%}">
                 <button class="cells__button_edit">Edit</button>
             </a>
         </div>

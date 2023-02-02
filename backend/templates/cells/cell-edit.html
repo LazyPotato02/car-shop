@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Cell Edit{% endblock %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/cells/cell-edit.css' %}">
+    <h2 class="cell__title">Cell {{ cells.cell_name }} Edit</h2>
+    <div class="cell__container">
+         <form method="POST" action="{% url 'cell edit' pk=cells.pk%}">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <button class="submit__button" type="submit">Edit</button>
+        </form>
+    </div>
+{% endblock %}

@@ -7,13 +7,23 @@
 .cell__container{
     border: 1px solid black;
     display: inline-block;
+    position: relative;
     font-size: 28px;
     padding: 30px;
     border-radius: 8px;
-    margin: 4px 12px 4px 20px;
+    margin: 4px 12px 4px 14px;
     width: 200px;
+    left: 2%;
     text-align: center;
 
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .cell__container{
+        width: 155px;
+    }
 }
 
 .cells__button_edit{
@@ -24,7 +34,16 @@
     border-radius: 6px;
     color: white;
 }
+
 .cells__button_edit:hover{
     background-color: dodgerblue;
 
+}
+@media screen and (max-width: 280px) {
+    .cell__container{
+        width: 110px;
+    }
+    .cells__button_edit{
+        font-size: 14px;
+    }
 }

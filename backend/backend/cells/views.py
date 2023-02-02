@@ -23,3 +23,11 @@ class ListCell(LoginRequiredMixin, views.ListView):
     model = Cells
     login_url = reverse_lazy('login')
     template_name = 'cells/cell-list.html'
+
+
+class EditCell(LoginRequiredMixin, views.UpdateView):
+    model = Cells
+    login_url = reverse_lazy('login')
+    template_name = 'cells/cell-edit.html'
+    fields = '__all__'
+    success_url = reverse_lazy('cell listing')
