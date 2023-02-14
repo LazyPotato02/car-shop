@@ -13,9 +13,8 @@
     border-radius: 8px;
     margin: 4px 12px 4px 14px;
     width: 200px;
-    left: 2%;
+    left: 4%;
     text-align: center;
-
 }
 
 
@@ -46,4 +45,19 @@
     .cells__button_edit{
         font-size: 14px;
     }
+}
+.tittle__and__creation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.add__cell__anchor{
+    font-size: 24px;
+    background-color: #0d6efd;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 4px 8px;
+    color: #fff;
 }
