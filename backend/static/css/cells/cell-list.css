@@ -61,3 +61,8 @@
     padding: 4px 8px;
     color: #fff;
 }
+
+.add__cell__anchor:hover{
+    background-color: #0051ff;
+    color: #fff;
+}
