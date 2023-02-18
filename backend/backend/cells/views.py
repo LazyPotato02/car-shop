@@ -12,7 +12,7 @@ from backend.cells.models import Cells
 
 class CreateCell(LoginRequiredMixin, views.CreateView):
     model = Cells
-    form_class = CellForm
+    fields = '__all__'
     login_url = reverse_lazy('login')
     redirect_field_name = reverse_lazy('cell listing')
     template_name = 'cells/cell-create.html'
@@ -26,8 +26,16 @@ class ListCell(LoginRequiredMixin, views.ListView):
 
 
 class EditCell(LoginRequiredMixin, views.UpdateView):
+    fields = '__all__'
     model = Cells
     login_url = reverse_lazy('login')
     template_name = 'cells/cell-edit.html'
+    success_url = reverse_lazy('cell listing')
+
+class DeleteCell(LoginRequiredMixin, views.DeleteView):
     fields = '__all__'
+    model = Cells
+    redirect_field_name = reverse_lazy('cell list')
+    login_url = reverse_lazy('login')
+    template_name = 'cells/cell-delete.html'
     success_url = reverse_lazy('cell listing')

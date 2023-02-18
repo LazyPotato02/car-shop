@@ -8,14 +8,37 @@
     font-size: 32px;
     border: 1px solid black;
 }
-.centered__form button{
+.centered__form .submit__button{
     border: 0;
     border-radius: 8px;
-    padding: 4px 8px;
+    padding: 4px 24px;
     float: right;
+
     background-color: #0d6efd;
     color: #fff;
 }
+/* DELETE FORM STYLE*/
+
+.centered__form .delete__form{
+    text-align: center;
+    font-size: 38px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.centered__form .delete__form .delete__button{
+    border: 0;
+    border-radius: 8px;
+    padding: 4px 24px;
+    float: right;
+
+    background-color: red;
+    color: #fff;
+}
+/* END OF DELETE FORM STYLE*/
 
 .center__cell__title{
     text-align: center;
