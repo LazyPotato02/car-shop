@@ -14,3 +14,10 @@ class CreateEmployee(views.CreateView):
     redirect_field_name = reverse_lazy('home page')
     template_name = 'employee/employee-create.html'
     success_url = reverse_lazy('home page')
+
+class ListEmployees(views.ListView):
+    model = Employee
+    login_url = reverse_lazy('login')
+    redirect_field_name = reverse_lazy('home page')
+    template_name = 'employee/employee-list.html'
+    success_url = reverse_lazy('home page')

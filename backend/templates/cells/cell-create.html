@@ -2,15 +2,9 @@
 {% block title %}Create Cell{% endblock %}
 {% block content %}
     {% load static %}
-    <style>
-        .cell__title{
-        text-align: center;
-        font-size: 36px;
-        margin-top: 6px;
-        }
-    </style>
+
     <link rel="stylesheet" href="{% static 'css/base/centered-form.css' %}">
-    <h2 class="cell__title">Cell Creation</h2>
+    <h2 class="title">Cell Creation</h2>
     <div class="centered__form">
         <form method="POST" action="{% url 'cell creation' %}">
             {{ form.as_p }}

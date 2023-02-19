@@ -1,14 +1,21 @@
-.centered__form{
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 6px;
+}
+
+.centered__form {
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: -50%-50%;
+    translate: -50% -50%;
     border-radius: 8px;
     padding: 32px;
     font-size: 32px;
     border: 1px solid black;
 }
-.centered__form .submit__button{
+
+.centered__form .submit__button {
     border: 0;
     border-radius: 8px;
     padding: 4px 24px;
@@ -17,9 +24,10 @@
     background-color: #0d6efd;
     color: #fff;
 }
+
 /* DELETE FORM STYLE*/
 
-.centered__form .delete__form{
+.centered__form .delete__form {
     text-align: center;
     font-size: 38px;
     display: flex;
@@ -29,7 +37,8 @@
     align-items: center;
 
 }
-.centered__form .delete__form .delete__button{
+
+.centered__form .delete__form .delete__button {
     border: 0;
     border-radius: 8px;
     padding: 4px 24px;
@@ -38,9 +47,33 @@
     background-color: red;
     color: #fff;
 }
+
 /* END OF DELETE FORM STYLE*/
 
-.center__cell__title{
+.delete__button {
+    border: 0;
+    border-radius: 8px;
+    padding: 4px 24px;
+    float: right;
+
+    background-color: red;
+    color: #fff;
+    margin-right: 12px;
+
+}
+
+.delete__button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.center__cell__title {
     text-align: center;
     margin-top: 10px;
+}
+
+.centered__form select{
+    width: 85%;
+    scroll-behavior: smooth;
+    height: 80px;
 }

@@ -1,7 +1,8 @@
 from django.urls import path
 
-from backend.employees.views import CreateEmployee
+from backend.employees.views import CreateEmployee, ListEmployees
 
 urlpatterns = [
-    path('add/',CreateEmployee.as_view(), name='create employee'),
+    path('', ListEmployees.as_view(), name='employee list'),
+    path('add/',CreateEmployee.as_view(), name='employee create'),
 ]

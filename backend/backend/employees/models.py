@@ -11,7 +11,7 @@ from backend.cells.models import Cells
 
 class Employee(models.Model):
     class Meta:
-        ordering = ('first_name',)
+        ordering = ('pk',)
 
     first_name = models.CharField(
         max_length=40,
@@ -40,4 +40,7 @@ class Employee(models.Model):
         unique=True,
         verbose_name='Employee Id'
     )
-
+    def __repr__(self):
+        return str(self.cell.get())
+    def __str__(self):
+        return f"{self.cell.get()}"

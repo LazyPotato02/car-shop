@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block title %}Employee Listing{% endblock %}
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/employees/employee-list.css' %}">
+    <h2>Employee Listing</h2>
+    <section>
+        {% for emp in employee_list %}
+            <article>
+                <p>{{ emp.first_name }} {{ emp.last_name }}</p>
+                <p>{{ emp.emp_id }}</p>
+                <p>{{ emp }}</p>
+{#                <button><a href="{% url 'employee edit' %}">Edit</a></button>#}
+                <button><a href="">Edit</a></button>
+            </article>
+        {% endfor %}
+    </section>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+{% block title %}Employee Creation{% endblock %}
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base/centered-form.css' %}">
+    <h2 class="title">Cell Creation</h2>
+    <div class="centered__form">
+        <form method="POST" action="{% url 'employee create' %}">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <button class="submit__button"type="submit">Create</button>
+        </form>
+    </div>
+{% endblock %}
