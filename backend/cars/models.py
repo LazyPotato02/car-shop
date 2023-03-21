@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -23,3 +24,12 @@ class Cars(models.Model):
         null=False,
         blank=False,
     )
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        blank=True,
+        null=True
+    )
+
+    def __str__(self):
+        return f'{self.make} {self.model}'
