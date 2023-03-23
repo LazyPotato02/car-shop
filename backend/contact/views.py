@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from rest_framework.authentication import SessionAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 
@@ -12,8 +14,6 @@ from contact.serializers import ContactsSerializer
 
 
 class ContactsCreateApiView(APIView):
-    permission_classes = [permissions.IsAuthenticated]
-
     def get(self, request, *args, **kwargs):
         todos = Contact.objects.filter(user=request.user.id)
         serializer = ContactsSerializer(todos, many=True)
