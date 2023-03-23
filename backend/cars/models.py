@@ -24,6 +24,11 @@ class Cars(models.Model):
         null=False,
         blank=False,
     )
+    image = models.CharField(
+        max_length= 9999,
+        null=False,
+        blank=False,
+    )
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,

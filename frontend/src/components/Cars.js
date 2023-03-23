@@ -11,8 +11,12 @@ function Cars() {
     }, []);
     return (
         <div>
+
             {data.map((item, index) => (
-                <p key={index}>{item.make} / {item.model} / {item.year} / {item.engine_type}</p>
+
+                <p key={index}>{item.make} / {item.model} / {item.year} / {item.engine_type} <img
+                    alt={'car'}
+                    src={item.image}/></p>
             ))}
         </div>
     );

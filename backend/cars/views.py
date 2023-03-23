@@ -26,6 +26,7 @@ class CarCreateApiView(APIView):
             'model': request.data.get('model'),
             'year': request.data.get('year'),
             'engine_type': request.data.get('engine_type'),
+            'image': request.data.get('image'),
             'user': request.user.id,
         }
         serializer = CarsSerializer(data=data)
@@ -71,6 +72,7 @@ class CarDetailApiView(APIView):
             'model': request.data.get('model'),
             'year': request.data.get('year'),
             'engine_type': request.data.get('engine_type'),
+            'image': request.data.get('image'),
             'user': request.user.id,
         }
         serializer = CarsSerializer(instance=todo_instance, data=data, partial=True)
