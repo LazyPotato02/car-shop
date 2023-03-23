@@ -5,13 +5,15 @@ from rest_framework import status
 from rest_framework import permissions
 
 from cars.models import Cars
+from cars.permissions import IsAuthenticatedAndPostOnly, IsGetOnly
 from cars.serializers import CarsSerializer
 
 
 # Create your views here.
 
 class CarCreateApiView(APIView):
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsGetOnly | IsAuthenticatedAndPostOnly]
 
     def get(self, request, *args, **kwargs):
         todos = Cars.objects.filter(user=request.user.id)
@@ -37,7 +39,8 @@ class CarCreateApiView(APIView):
 
 class CarDetailApiView(APIView):
     # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsGetOnly | IsAuthenticatedAndPostOnly]
 
     def get_object(self, todo_id, user_id):
         try:
