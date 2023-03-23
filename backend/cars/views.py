@@ -13,7 +13,6 @@ from cars.serializers import CarsSerializer
 
 class CarCreateApiView(APIView):
     # permission_classes = [permissions.IsAuthenticated]
-    permission_classes = [IsGetOnly | IsAuthenticatedAndPostOnly]
 
     def get(self, request, *args, **kwargs):
         todos = Cars.objects.filter(user=request.user.id)
@@ -40,7 +39,6 @@ class CarCreateApiView(APIView):
 class CarDetailApiView(APIView):
     # add permission to check if user is authenticated
     # permission_classes = [permissions.IsAuthenticated]
-    permission_classes = [IsGetOnly | IsAuthenticatedAndPostOnly]
 
     def get_object(self, todo_id, user_id):
         try:

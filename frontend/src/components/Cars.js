@@ -1,8 +1,8 @@
-import './App.css';
+import './Cars.css';
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
 
-function App() {
+function Cars() {
     const [data, setData] = useState([])
     useEffect(() => {
         axios.get('http://127.0.0.1:8000/cars/api')
@@ -11,11 +11,11 @@ function App() {
     }, []);
     return (
         <div>
-            {data.map((item,index) => (
-                <p key={index}>{item.name} / {item.email} / {item.text}</p>
+            {data.map((item, index) => (
+                <p key={index}>{item.make} / {item.model} / {item.year} / {item.engine_type}</p>
             ))}
         </div>
     );
 }
 
-export default App;
+export default Cars;
