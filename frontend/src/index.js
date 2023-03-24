@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './reset.css'
 import './index.css';
 import Cars from './components/Cars';
+import Header from './components/Header'
+import Hero from "./components/Hero";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Cars />
-  </React.StrictMode>
+    <React.StrictMode>
+        <Header/>
+        <Cars/>
+        <Hero/>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

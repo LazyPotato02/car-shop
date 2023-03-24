@@ -1,0 +1,24 @@
+.header{
+    background-color: #3535a3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .head__link{
+    color: lightgray;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.header .list{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: lightgray;
+    padding-right: 30px;
+}
+.header .list .list__item a{
+    color: lightgray;
+    text-decoration: none;
+}
