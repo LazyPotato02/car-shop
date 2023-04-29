@@ -37,7 +37,7 @@ class ContactsCreateApiView(APIView):
 
 class ContactDetailApiView(APIView):
     # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
     def get_object(self, todo_id, user_id):
         try:

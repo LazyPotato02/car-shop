@@ -42,7 +42,7 @@ function Hero() {
                     you're sure to find exactly what you're looking for.</p>
 
             </article>
-            <p className={'header__second__title'}>Over 5000 cars available to purchase or rent!</p>
+            <p id={'cars'} className={'header__second__title'}>Over 5000 cars available to purchase or rent!</p>
 
         </section>
     )
