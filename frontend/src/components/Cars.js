@@ -10,15 +10,26 @@ function Cars() {
             .catch(error => console.log(error))
     }, []);
     return (
-        <div>
+
+        <section className={'car__article'}>
 
             {data.map((item, index) => (
+                <article className={`car__item`}>
+                    {/*<p  key={index}>{item.make} / {item.model} / {item.year} / {item.engine_type}*/}
+                    {/*</p>*/}
+                    <img alt={'car'} src={item.image}/>
 
-                <p key={index}>{item.make} / {item.model} / {item.year} / {item.engine_type} <img
-                    alt={'car'}
-                    src={item.image}/></p>
+                    <p>Make: {item.make}</p>
+                    <p>Model: {item.model}</p>
+                    <p>Year: {item.year}</p>
+                    <p>Engine: {item.engine_type}</p>
+                    <div className={'button__wrapper'}>
+                        <button className={'buy__btn'}>BUY</button>
+                        <button className={'rent__btn'}>RENT</button>
+                    </div>
+                </article>
             ))}
-        </div>
+        </section>
     );
 }
 

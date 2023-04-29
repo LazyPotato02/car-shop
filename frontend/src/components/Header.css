@@ -1,24 +1,28 @@
-.header{
-    background-color: #3535a3;
+.header {
+    background-color: #bd0a0a;
+    /*background: rgb(210, 210, 210);*/
+    /*background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(189, 10, 10, 1) 71%);*/
+    /*padding-bottom: 30px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header .head__link{
-    color: lightgray;
+.header .head__link {
+    color: #ffffff;
     padding-left: 30px;
     text-decoration: none;
 }
 
-.header .list{
+.header .list {
     display: flex;
     list-style: none;
     gap: 30px;
-    color: lightgray;
+    color: #ffffff;
     padding-right: 30px;
 }
-.header .list .list__item a{
-    color: lightgray;
+
+.header .list .list__item a {
+    color: #ffffff;
     text-decoration: none;
 }

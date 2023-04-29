@@ -1,13 +1,14 @@
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: rgb(238,229,229);
-  background: linear-gradient(331deg, rgba(238,229,229,1) 50%, rgba(0,168,255,1) 50%);
+    margin: 0;
+    /*font-family: Arial, Helvetica, sans-serif, sans-serif;*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Comfortaa Light", Arial, Helvetica, sans-serif, sans-serif;
+    /*background: rgb(238,229,229);*/
+    /*background: linear-gradient(331deg, rgba(238,229,229,1) 50%, rgba(0,168,255,1) 50%);*/
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

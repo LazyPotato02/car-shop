@@ -1,51 +1,42 @@
-.hero__title{
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+.header__title{
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-section {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 100px;
+    padding-top: 30px;
+    font-size: 40px;
 
 }
 
-.logo__hero {
-    width: 300px;
-    margin-top: 26px;
+.hero__section img{
+    scale: 0.8;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: -4px 3px 56px -6px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -4px 3px 56px -6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -4px 3px 56px -6px rgba(0, 0, 0, 0.75);
 }
-
-.hero__wrapper {
+.hero__section article{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 30%;
+    justify-content: center;
+}
+.hero__section article p{
+    width: 34%;
+}
+.header__second__title{
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    width: 100%;
+    margin-bottom: 50px;
 
 }
+.hero__first__about{
 
-article {
-    background-color: white;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: -4px 3px 56px -6px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -4px 3px 56px -6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -4px 3px 56px -6px rgba(0, 0, 0, 0.75);
 }
+.hero__second__about{
+    flex-direction: row-reverse;
+}
+.hero__third__about{
 
-.about {
-    width: 50%;
 }
+.hero__fourth__about{
+    flex-direction: row-reverse;
 
-.about ul{
-    list-style: none;
-}
-.about ul li{
-    margin-bottom: 16px;
 }

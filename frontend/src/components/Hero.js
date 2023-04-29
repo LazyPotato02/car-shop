@@ -1,49 +1,49 @@
 import './Hero.css'
-import logoHero from './img/logo__hero.png'
+
+// import logoHero from './img/logo__hero.png'
+import firstImage from './img/1.jpg'
+import secondImage from './img/2.jpg'
+import thirdImage from './img/3.jpg'
+import fourthImage from './img/4.jpg'
 
 function Hero() {
     return (
-        <section>
-            <div className={'hero__wrapper'}>
 
-                <article className={'short__about'}>
-                    <h1 className={'hero__title'}>Wellcome to Car Shop Store</h1>
-                    Find your dream car at our web store! We offer a wide selection of
-                    new
-                    and used vehicles from top brands, hassle-free financing options, and thorough inspections for your
-                    peace of mind. Start browsing today and drive off in the car you've always wanted!
-                </article>
-                <img className={'logo__hero'} src={logoHero} alt="logo_hero"/>
-            </div>
-            <article className={'about'}>
-                <h2>About</h2>
-                <ul>
-                    <li>Welcome to our online car web store, where you can find the perfect vehicle to fit your
-                        lifestyle and budget. We offer a wide selection of new and used cars from some of the most
-                        popular brands in the industry, including Honda, Toyota, Ford, and etc..
-                    </li>
-                    <li>Our knowledgeable and friendly staff is dedicated to providing you with a hassle-free car buying
-                        experience. Whether you're looking for a family sedan, a rugged SUV, or a sleek sports car,
-                        we've got you covered. We offer a variety of financing options to help you get behind the wheel
-                        of your dream car, including lease and loan options.
-                    </li>
-                    <li>At our car web store, we believe in transparency and honesty in all our dealings with our
-                        customers. That's why we provide detailed vehicle history reports and thorough inspections on
-                        all our used cars. We want you to have peace of mind when you purchase a vehicle from us,
-                        knowing that you're getting a high-quality car that has been thoroughly vetted by our expert
-                        technicians.
-                    </li>
-                    <li>We understand that buying a car is a big investment, which is why we offer a variety of
-                        warranties and extended service plans to protect your investment and give you added peace of
-                        mind. Our goal is to make your car buying experience as seamless and stress-free as possible, so
-                        you can focus on enjoying your new ride.
-                    </li>
-                    <li>
-                        Thank you for considering our car web store for your next vehicle purchase. We look forward to
-                        helping you find the perfect car to fit your needs and budget.
-                    </li>
-                </ul>
+        <section className={'hero__section'}>
+            <h1 className={'header__title'}>Car Store where you can rent or buy a car! </h1>
+
+
+
+            <article className={'hero__first__about'}>
+                <img src={firstImage} alt=""/>
+                <p>Looking to buy a new car? A car store might just be the place for you. Car stores are a one-stop-shop
+                    for all your car buying needs. From brand new cars to used cars, from luxury vehicles to
+                    budget-friendly options, car stores offer a wide variety of cars to choose from.</p>
+
             </article>
+            <article className={'hero__second__about'}>
+                <img src={secondImage} alt=""/>
+                <p>At a car store, you'll have the opportunity to test drive cars and speak with knowledgeable
+                    salespeople who can help you find the perfect vehicle for your needs and budget. Many car stores
+                    also offer financing options, making it easier for you to afford the car of your dreams.</p>
+
+            </article>
+            <article className={'hero__third__about'}>
+                <img src={thirdImage} alt=""/>
+                <p>But car stores aren't just for buying cars. They also offer a range of services to help you maintain
+                    your vehicle. From oil changes to tire rotations, car stores have experienced technicians who can
+                    help keep your car running smoothly.</p>
+
+            </article>
+            <article className={'hero__fourth__about'}>
+                <img src={fourthImage} alt=""/>
+                <p>So whether you're in the market for a new car or just need some maintenance done on your current
+                    vehicle, consider visiting a car store. With their wide selection of cars and knowledgeable staff,
+                    you're sure to find exactly what you're looking for.</p>
+
+            </article>
+            <p className={'header__second__title'}>Over 5000 cars available to purchase or rent!</p>
+
         </section>
     )
 }
