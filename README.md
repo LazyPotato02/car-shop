@@ -13,3 +13,4 @@ Technologies used:
 **No mobile integration is made for now**
 
 # PROJECT IS NOT READY FOR DEPLOYMENT
+**CARS SHOULD BE ADDED THROUGH DJANGO ADMIN**
