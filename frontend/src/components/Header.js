@@ -7,7 +7,7 @@ function Header(){
                 <ul className={'list'}>
                     <li className={'list__item'}><a href={'#hero'}>About</a></li>
                     <li className={'list__item'}><a href={'#cars'}>Cars</a></li>
-                    <li className={'list__item'}><a href={'contact'}>Contact</a></li>
+                    <li className={'list__item'}><a href={'#contact'}>Contact</a></li>
                 </ul>
             </nav>
         </header>
