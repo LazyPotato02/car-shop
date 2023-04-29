@@ -11,7 +11,7 @@ function Cars() {
     }, []);
     return (
 
-        <section className={'car__article'}>
+        <section id={'cars'} className={'car__article'}>
 
             {data.map((item, index) => (
                 <article className={`car__item`}>

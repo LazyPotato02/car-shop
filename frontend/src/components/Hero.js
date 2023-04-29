@@ -14,7 +14,7 @@ function Hero() {
 
 
 
-            <article className={'hero__first__about'}>
+            <article className={'hero__first__about'} id={'hero'}>
                 <img src={firstImage} alt=""/>
                 <p>Looking to buy a new car? A car store might just be the place for you. Car stores are a one-stop-shop
                     for all your car buying needs. From brand new cars to used cars, from luxury vehicles to
